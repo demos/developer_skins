@@ -34,6 +34,10 @@ Description: bpm, pitch, key
 				<Connection>
 					<ConfigKey><Variable name="channel"/>,visual_bpm</ConfigKey>
 				</Connection>
+				<Connection>
+					<ConfigKey persist="true">show_bpms</ConfigKey>
+					<BindProperty>visible</BindProperty>
+				</Connection>
 			</NumberBpm>
 			
 			<Template src="skin:spacer_vx.xml">

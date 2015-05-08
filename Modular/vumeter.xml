@@ -18,7 +18,10 @@ Description: vumeter and peak indicator.
 		<Children>
 			
 			<Template src="skin:spacer_vx.xml">
+<!--
 				<SetVariable name="height" expression="margin_top"/>
+-->
+				<SetVariable name="height" expression="0"/>
 			</Template>
 			
 			<!-- Visual - Volume peak indicator -->

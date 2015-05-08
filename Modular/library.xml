@@ -44,8 +44,17 @@
                 </Children>
               </WidgetGroup>
               
-              <Library>
-              </Library>
+              <WidgetGroup>
+                <Layout>vertical</Layout>
+                <Children>
+                      
+					<!--Template src="skin:effect_rack.xml">
+					</Template-->
+					
+					<Library>
+					</Library>
+                </Children>
+              </WidgetGroup>
               
             </Children>
           </Splitter>

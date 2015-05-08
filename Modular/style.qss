@@ -209,3 +209,20 @@ WPushButton[pressed="true"] {
 }
 */
 
+
+WStarRating {
+	color	: #ffffff;
+  /** /
+  margin            : 10px;
+  border            : 1px solid #ffffff;
+  padding           : 2px;
+  color             : #ff0000;
+  background-color  : #00ff00;
+  /**/
+}
+
+WSpinny {
+/*
+    background-color: #191919;
+*/
+}

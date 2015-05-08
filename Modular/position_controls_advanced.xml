@@ -113,6 +113,9 @@ Track control panel.
 							<Number>1</Number>
 							<SetVariable name="border_color" expression="color"/>
 							<SetVariable name="text_color" expression="color"/>
+<!--
+<SetVariable name="buggy" expression="comment ça va toi?"/>
+-->
 							<Unpressed>btn_text.svg</Unpressed>
 							<Pressed>btn_text.svg</Pressed>
 						</State>
@@ -123,6 +126,9 @@ Track control panel.
 						</Connection>
 					</PushButton>
 					
+                    
+                    
+                    
 					<Template src="skin:spacer_vx.xml">
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>

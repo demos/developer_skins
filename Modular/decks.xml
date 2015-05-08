@@ -40,7 +40,7 @@ Description: decks
 						<SetVariable name="width">13</SetVariable>
 						<SetVariable name="space">6</SetVariable>
 						<SetVariable name="peak_height">21</SetVariable>
-						<SetVariable name="margin">2</SetVariable>
+						<SetVariable name="margin">3</SetVariable>
 						<SetVariable name="channel">[Channel1]</SetVariable>
 						<SetVariable name="peak_control">PeakIndicator</SetVariable>
 						<SetVariable name="vumeter_control">VuMeter</SetVariable>
@@ -58,7 +58,7 @@ Description: decks
 						<SetVariable name="width">13</SetVariable>
 						<SetVariable name="space">6</SetVariable>
 						<SetVariable name="peak_height">21</SetVariable>
-						<SetVariable name="margin">2</SetVariable>
+						<SetVariable name="margin">3</SetVariable>
 						<SetVariable name="channel">[Channel2]</SetVariable>
 						<SetVariable name="peak_control">PeakIndicator</SetVariable>
 						<SetVariable name="vumeter_control">VuMeter</SetVariable>
@@ -342,7 +342,11 @@ Description: decks
 								<SizePolicy>min,f</SizePolicy>
 								<Size>i,14</Size>
 								<Style>
-									QGroupBox { border: 0; }
+									/** /
+									QGroupBox { border: 1px solid green; }
+									/** /
+									QGroupBox { border: 1px solid transparent; }
+									/**/
 								</Style>
 								<Children>
 									
@@ -350,6 +354,11 @@ Description: decks
 									<Template src="skin:track_bpm_info.xml">
 										<SetVariable name="i">1</SetVariable>
 									</Template>
+									
+									<StarRating>
+										<TooltipId>starrating</TooltipId>
+										<Channel>1</Channel>
+									</StarRating>
 									
 									<!-- Times Played -->
 									<TrackProperty>
@@ -381,6 +390,7 @@ Description: decks
 											
 											<Template src="skin:waveform.xml">
 												<SetVariable name="i">1</SetVariable>
+                                                <SetVariable name="color">#ff0000</SetVariable>
 											</Template>
 											
 											<Template src="skin:spacer_vx.xml">
@@ -389,6 +399,7 @@ Description: decks
 											
 											<Template src="skin:waveform.xml">
 												<SetVariable name="i">2</SetVariable>
+                                            <SetVariable name="color">#13a9fc</SetVariable>
 											</Template>
 											
 										</Children>
@@ -427,15 +438,33 @@ Description: decks
 							<WidgetGroup>
 								<Layout>horizontal</Layout>
 								<SizePolicy>min,f</SizePolicy>
-								<Size>i,14</Size>
+								<Size>i,15</Size>
 								<Style>
-									QGroupBox { border: 0; }
+									/** /
+									QGroupBox { border: 1px solid green; }
+									/** /
+									QGroupBox { border: 1px solid transparent; }
+									/**/
 								</Style>
 								<Children>
 									
 									<Template src="skin:track_bpm_info.xml">
 										<SetVariable name="i">2</SetVariable>
 									</Template>
+									
+									<StarRating>
+										<TooltipId>Etoiles!!!!</TooltipId>
+										<Style>
+											/**/
+											QGroupBox { border: 1px solid green; }
+											/** /
+											QGroupBox { border: 1px solid transparent; }
+											/**/
+										</Style>
+										<Property>rating</Property>
+										<Channel>2</Channel>
+										<Size>100,20</Size>
+									</StarRating>
 									
 									<!-- Times Played -->
 									<TrackProperty>
@@ -456,19 +485,94 @@ Description: decks
 						<ObjectName>DecksInfo</ObjectName>
 						<Layout>horizontal</Layout>
 						<SizePolicy>me,f</SizePolicy>
-						<MinimumSize>-1,17</MinimumSize>
-						<MaximumSize>-1,17</MaximumSize>
+						<MinimumSize>-1,18</MinimumSize>
+						<MaximumSize>-1,18</MaximumSize>
 						<Children>
 							
-							<Time>
+							<WidgetGroup>
+								<ObjectName>MiscControls</ObjectName>
+								<Layout>horizontal</Layout>
 								<SizePolicy>min,f</SizePolicy>
-								<MinimumSize>40,17</MinimumSize>
-								<MaximumSize>87,17</MaximumSize>
-								<TooltipId>time</TooltipId>
-								<Alignment>center</Alignment>
-								<ShowSeconds>false</ShowSeconds>
-								<ClockFormat>24</ClockFormat>
-							</Time>
+								<MinimumSize>-1,17</MinimumSize>
+								<MaximumSize>-1,17</MaximumSize>
+								<Children>
+									
+									<SetVariable name="text">BPM</SetVariable>
+									<SetVariable name="width">29</SetVariable>
+									<SetVariable name="height">15</SetVariable>
+									<SetVariable name="color">#00ff00</SetVariable>
+									<PushButton>
+										<ObjectName>EffectRackToggle</ObjectName>
+										<TooltipId>rate_temp_down</TooltipId>
+										<NumberStates>2</NumberStates>
+										<State>
+											<Number>0</Number>
+											<Pressed>btn_text.svg</Pressed>
+											<Unpressed>btn_text.svg</Unpressed>
+										</State>
+										<State>
+											<Number>1</Number>
+											<Pressed>btn_text.svg</Pressed>
+											<Unpressed>btn_text.svg</Unpressed>
+											<SetVariable name="border_color" expression="color"/>
+											<SetVariable name="text_color" expression="color"/>
+										</State>
+										<Connection>
+											<ConfigKey persist="true">show_bpms</ConfigKey>
+										</Connection>
+									</PushButton>
+									
+									<Template src="skin:spacer_vx.xml">
+										<SetVariable name="height">5</SetVariable>
+									</Template>
+									
+									<SetVariable name="text">Fx</SetVariable>
+									<SetVariable name="width">25</SetVariable>
+									<SetVariable name="height">15</SetVariable>
+									<SetVariable name="color">#00ff00</SetVariable>
+									<PushButton>
+										<ObjectName>EffectRackToggle</ObjectName>
+										<TooltipId>rate_temp_down</TooltipId>
+										<NumberStates>2</NumberStates>
+										<State>
+											<Number>0</Number>
+											<Pressed>btn_text.svg</Pressed>
+											<Unpressed>btn_text.svg</Unpressed>
+										</State>
+										<State>
+											<Number>1</Number>
+											<Pressed>btn_text.svg</Pressed>
+											<Unpressed>btn_text.svg</Unpressed>
+											<SetVariable name="border_color" expression="color"/>
+											<SetVariable name="text_color" expression="color"/>
+										</State>
+										<Connection>
+											<ConfigKey persist="true">[EffectRack1],show</ConfigKey>
+										</Connection>
+									</PushButton>
+								</Children>
+							</WidgetGroup>
+							
+							<WidgetGroup>
+								<ObjectName>TimeGroup</ObjectName>
+								<Layout>horizontal</Layout>
+								<SizePolicy>me,f</SizePolicy>
+								<MinimumSize>-1,17</MinimumSize>
+								<MaximumSize>-1,17</MaximumSize>
+								<Children>
+									
+									<Time>
+										<SizePolicy>min,f</SizePolicy>
+										<MinimumSize>40,17</MinimumSize>
+										<MaximumSize>87,17</MaximumSize>
+										<TooltipId>time</TooltipId>
+										<Alignment>center</Alignment>
+										<ShowSeconds>false</ShowSeconds>
+										<ClockFormat>24</ClockFormat>
+									</Time>
+								</Children>
+							</WidgetGroup>
+							
 						</Children>
 					</WidgetGroup>
 					

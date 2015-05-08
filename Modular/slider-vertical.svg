@@ -100,16 +100,18 @@
 		<text	x="7"	expr-x="text_x + 0.5"
 				y="62"	expr-y="text_y + 0.5"
 				text-anchor="middle"
-				style="fill:#000000; font-size: 9px; font-weight: bold; font-family: SquaryBig, loma, serif;">
-					<Variable name="text"/>
+				style="fill:#000000; font-size: 9px; font-weight: bold; font-family: SquaryBig, loma, serif;"
+                value="text">
+					blabla
 		</text>
 		
 		<!-- label -->
 		<text	x="7"	expr-x="text_x"
 				y="62"	expr-y="text_y"
 				text-anchor="middle"
-				style="fill:#bbbbbb; font-size: 9px; font-weight: bold; prop('fill', 'text_color'); font-family: SquaryBig, loma, serif;">
-					<Variable expression="text"/>
+				style="fill:#bbbbbb; font-size: 9px; font-weight: bold; prop('fill', 'text_color'); font-family: SquaryBig, loma, serif;"
+                value="text">
+					blabla
 		</text>
 		
 		<!-- slit -->

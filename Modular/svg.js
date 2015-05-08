@@ -1,4 +1,3 @@
-global = this;
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -26,9 +25,11 @@ function setDefault(){
 }
 
 
-function isNumber(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
-}
+// function isNumber(n) {
+  // return !isNaN(parseFloat(n)) && isFinite(n);
+// }
+// 
+
 
 // http://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
@@ -83,4 +84,18 @@ pointsToPath = function( points ){
 
 this.svg.templateHooks.pointsToPath = pointsToPath;
 
+
+function dumpObject(object){
+    print('___________________');
+    for (var prop in object) {
+        switch( typeof(this[prop]) ) {
+            case 'function' :
+                print(prop, typeof(this[prop]) );
+                break;
+            default:
+                print(prop, this[prop] );
+        }
+    }
+    print('___________________');
+}
 

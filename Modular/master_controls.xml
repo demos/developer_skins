@@ -81,18 +81,31 @@ Master controls : volume, balance, pregain + time.
 				<MaximumSize>94,190</MaximumSize>
 				<Children>
 					
-					<!-- vumeter left -->
-					<Template src="skin:vumeter.xml">
-						<SetVariable name="i">2</SetVariable>
-						<SetVariable name="height" expression="vumeters_height"/>
-						<SetVariable name="width">9</SetVariable>
-						<SetVariable name="space">1</SetVariable>
-						<SetVariable name="peak_height">15</SetVariable>
-						<SetVariable name="margin">1</SetVariable>
-						<SetVariable name="channel">[Master]</SetVariable>
-						<SetVariable name="peak_control">PeakIndicator</SetVariable>
-						<SetVariable name="vumeter_control">VuMeterR</SetVariable>
-					</Template>
+					<WidgetGroup>
+						<ObjectName>VuMeterLeft</ObjectName>
+						<Layout>horizontal</Layout>
+						<SizePolicy>min,min</SizePolicy>
+						<Children>
+							
+							<!-- vumeter left -->
+							<Template src="skin:vumeter.xml">
+								<SetVariable name="i">2</SetVariable>
+								<SetVariable name="height" expression="vumeters_height"/>
+								<SetVariable name="width">9</SetVariable>
+								<SetVariable name="space">1</SetVariable>
+								<SetVariable name="peak_height">15</SetVariable>
+								<SetVariable name="margin">1</SetVariable>
+								<SetVariable name="channel">[Master]</SetVariable>
+								<SetVariable name="peak_control">PeakIndicator</SetVariable>
+								<SetVariable name="vumeter_control">VuMeterR</SetVariable>
+							</Template>
+							
+						</Children>
+						<Connection>
+							<ConfigKey persist="true">[Master],show_balance_controls</ConfigKey>
+							<BindProperty>visible</BindProperty>
+						</Connection>
+					</WidgetGroup>
 					
 					<Template src="skin:spacer_vx.xml">
 						<SetVariable name="height">3</SetVariable>
@@ -128,18 +141,33 @@ Master controls : volume, balance, pregain + time.
 					</Template>
 					
 					
-					<!-- vumeter right -->
-					<Template src="skin:vumeter.xml">
-						<SetVariable name="i">2</SetVariable>
-						<SetVariable name="height" expression="vumeters_height"/>
-						<SetVariable name="width">9</SetVariable>
-						<SetVariable name="space">1</SetVariable>
-						<SetVariable name="peak_height">15</SetVariable>
-						<SetVariable name="margin">1</SetVariable>
-						<SetVariable name="channel">[Master]</SetVariable>
-						<SetVariable name="peak_control">PeakIndicator</SetVariable>
-						<SetVariable name="vumeter_control">VuMeterL</SetVariable>
-					</Template>
+					<WidgetGroup>
+						<ObjectName>VuMeterLeft</ObjectName>
+						<Layout>horizontal</Layout>
+						<SizePolicy>min,min</SizePolicy>
+						<Children>
+							
+							<!-- vumeter right -->
+							<Template src="skin:vumeter.xml">
+								<SetVariable name="i">2</SetVariable>
+								<SetVariable name="height" expression="vumeters_height"/>
+								<SetVariable name="width">9</SetVariable>
+								<SetVariable name="space">1</SetVariable>
+								<SetVariable name="peak_height">15</SetVariable>
+								<SetVariable name="margin">1</SetVariable>
+								<SetVariable name="channel">[Master]</SetVariable>
+								<SetVariable name="peak_control">PeakIndicator</SetVariable>
+								<SetVariable name="vumeter_control">VuMeterL</SetVariable>
+								<SetVariable name="visibility">[Master],show_balance_controls</SetVariable>
+							</Template>
+							
+							
+						</Children>
+						<Connection>
+							<ConfigKey persist="true">[Master],show_balance_controls</ConfigKey>
+							<BindProperty>visible</BindProperty>
+						</Connection>
+					</WidgetGroup>
 					
 					
 					<WidgetGroup>

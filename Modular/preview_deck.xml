@@ -177,7 +177,7 @@ Description: preview deck
 							
 							<Template src="skin:vumeter.xml">
 								<!--TooltipId>channel_VuMeter</TooltipId-->
-								<SetVariable name="wrapper_height" expression="track_line_height"/>
+								<!--SetVariable name="wrapper_height" expression="track_line_height"/-->
 								<SetVariable name="i">2</SetVariable>
 								<SetVariable name="height">61</SetVariable>
 								<SetVariable name="width">13</SetVariable>
