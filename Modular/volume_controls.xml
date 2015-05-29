@@ -20,6 +20,7 @@ Description: track gain and volume
 			<SetVariable name="channel">[Channel<Variable name="i"/>]</SetVariable>
 			
 			<!--Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">8</SetVariable>
 				<SetVariable name="height">8</SetVariable>
 			</Template-->
 			
@@ -53,6 +54,7 @@ Description: track gain and volume
 					</SliderComposed>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">3</SetVariable>
 						<SetVariable name="height">3</SetVariable>
 					</Template>
 					
@@ -85,6 +87,7 @@ Description: track gain and volume
 			</WidgetGroup>
 				
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">3</SetVariable>
 				<SetVariable name="height">3</SetVariable>
 			</Template>
 			

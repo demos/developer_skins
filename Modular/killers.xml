@@ -22,6 +22,7 @@ Description: Frequency killers
 			<SetVariable name="height">11</SetVariable>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">1</SetVariable>
 				<SetVariable name="height">1</SetVariable>
 			</Template>
 			

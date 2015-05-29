@@ -26,10 +26,7 @@
             <MaximumSize>-1,45</MaximumSize>
             <SizePolicy>me,min</SizePolicy>
             <Children>
-				
-				
-
-				
+            
               <Template src="skin:effect_chain_simple.xml">
                 <SetVariable name="EffectRack">1</SetVariable>
                 <SetVariable name="EffectUnit">1</SetVariable>

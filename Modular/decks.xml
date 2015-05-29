@@ -47,6 +47,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="middle_space"/></SetVariable>
 						<SetVariable name="height"><Variable name="middle_space"/></SetVariable>
 					</Template>
 					
@@ -94,6 +95,7 @@ Description: decks
 				<Children>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">1</SetVariable>
 						<SetVariable name="height">1</SetVariable>
 					</Template>
 					
@@ -103,6 +105,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="middle_space"/></SetVariable>
 						<SetVariable name="height"><Variable name="middle_space"/></SetVariable>
 					</Template>
 					
@@ -112,6 +115,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">15</SetVariable>
 						<SetVariable name="height">15</SetVariable>
 					</Template>
 					
@@ -123,6 +127,7 @@ Description: decks
 			</WidgetGroup>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">7</SetVariable>
 				<SetVariable name="height">7</SetVariable>
 			</Template>
 			
@@ -144,6 +149,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="middle_space"/></SetVariable>
 						<SetVariable name="height"><Variable name="middle_space"/></SetVariable>
 					</Template>
 					
@@ -170,6 +176,7 @@ Description: decks
 			</WidgetGroup>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">7</SetVariable>
 				<SetVariable name="height">7</SetVariable>
 			</Template>
 			
@@ -193,6 +200,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="middle_space"/></SetVariable>
 						<SetVariable name="height"><Variable name="middle_space"/></SetVariable>
 					</Template>
 					
@@ -204,6 +212,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">15</SetVariable>
 						<SetVariable name="height">15</SetVariable>
 					</Template>
 					
@@ -227,6 +236,7 @@ Description: decks
 				<Children>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">25</SetVariable>
 						<SetVariable name="height">25</SetVariable>
 					</Template>
 					
@@ -236,6 +246,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="middle_space"/></SetVariable>
 						<SetVariable name="height"><Variable name="middle_space"/></SetVariable>
 					</Template>
 					
@@ -245,6 +256,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">25</SetVariable>
 						<SetVariable name="height">25</SetVariable>
 					</Template>
 					
@@ -280,6 +292,7 @@ Description: decks
 				<Children>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">25</SetVariable>
 						<SetVariable name="height">25</SetVariable>
 					</Template>
 					
@@ -289,6 +302,7 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="middle_space"/></SetVariable>
 						<SetVariable name="height"><Variable name="middle_space"/></SetVariable>
 					</Template>
 					
@@ -298,10 +312,12 @@ Description: decks
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">25</SetVariable>
 						<SetVariable name="height">25</SetVariable>
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">17</SetVariable>
 						<SetVariable name="height">17</SetVariable>
 					</Template>
 					
@@ -394,6 +410,7 @@ Description: decks
 											</Template>
 											
 											<Template src="skin:spacer_vx.xml">
+												<SetVariable name="width">40</SetVariable>
 												<SetVariable name="height">40</SetVariable>
 											</Template>
 											
@@ -417,6 +434,7 @@ Description: decks
 											</Template>
 											
 											<Template src="skin:spacer_vx.xml">
+												<SetVariable name="width">40</SetVariable>
 												<SetVariable name="height">40</SetVariable>
 											</Template>
 											
@@ -523,6 +541,7 @@ Description: decks
 									</PushButton>
 									
 									<Template src="skin:spacer_vx.xml">
+										<SetVariable name="width">5</SetVariable>
 										<SetVariable name="height">5</SetVariable>
 									</Template>
 									

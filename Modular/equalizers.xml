@@ -29,6 +29,7 @@ Description: equalizers.
 			</Template>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">2</SetVariable>
 				<SetVariable name="height">2</SetVariable>
 			</Template>
 			
@@ -43,6 +44,7 @@ Description: equalizers.
 			</Template>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">2</SetVariable>
 				<SetVariable name="height">2</SetVariable>
 			</Template>
 			

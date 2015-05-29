@@ -25,6 +25,7 @@ Description: duration
 			</NumberPos>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">6</SetVariable>
 				<SetVariable name="height">6</SetVariable>
 			</Template>
 			
@@ -33,6 +34,7 @@ Description: duration
 			</Label>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">6</SetVariable>
 				<SetVariable name="height">6</SetVariable>
 			</Template>
 			

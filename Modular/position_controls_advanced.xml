@@ -70,6 +70,7 @@ Track control panel.
 					</SliderComposed>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">2</SetVariable>
 						<SetVariable name="height">2</SetVariable>
 					</Template>
 					
@@ -77,6 +78,7 @@ Track control panel.
 			</WidgetGroup>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">7</SetVariable>
 				<SetVariable name="height">7</SetVariable>
 			</Template>
 			
@@ -130,6 +132,7 @@ Track control panel.
                     
                     
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -154,6 +157,7 @@ Track control panel.
 					</PushButton>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -188,6 +192,7 @@ Track control panel.
 					</PushButton>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -219,6 +224,7 @@ Track control panel.
 					</PushButton>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width" expression="margin_bottom"/>
 						<SetVariable name="height" expression="margin_bottom"/>
 					</Template>
 					
@@ -227,6 +233,7 @@ Track control panel.
 			
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">3</SetVariable>
 				<SetVariable name="height">3</SetVariable>
 			</Template>
 			
@@ -253,6 +260,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -267,6 +275,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -281,6 +290,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -295,6 +305,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width" expression="margin_bottom"/>
 						<SetVariable name="height" expression="margin_bottom"/>
 					</Template>
 					
@@ -303,6 +314,7 @@ Track control panel.
 			
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">3</SetVariable>
 				<SetVariable name="height">3</SetVariable>
 			</Template>
 			
@@ -330,6 +342,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -344,6 +357,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -358,6 +372,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width"><Variable name="spacer_height"/></SetVariable>
 						<SetVariable name="height"><Variable name="spacer_height"/></SetVariable>
 					</Template>
 					
@@ -372,6 +387,7 @@ Track control panel.
 					</Template>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width" expression="margin_bottom"/>
 						<SetVariable name="height" expression="margin_bottom"/>
 					</Template>
 					
@@ -379,6 +395,7 @@ Track control panel.
 			</WidgetGroup>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">7</SetVariable>
 				<SetVariable name="height">7</SetVariable>
 			</Template>
 			

@@ -26,17 +26,17 @@
             <Orientation>horizontal</Orientation>
             <SizePolicy>me,me</SizePolicy>
             <Children>
-				
+              
               <WidgetGroup>
                 <Layout>vertical</Layout>
                 <Children>
-                      
-					<Template src="skin:preview_deck.xml">
-					</Template>
-					
-					<SearchBox>
-					</SearchBox>
-				  
+                  
+                  <Template src="skin:preview_deck.xml">
+                  </Template>
+                  
+                  <SearchBox>
+                  </SearchBox>
+                  
                   
                   <LibrarySidebar>
                   </LibrarySidebar>
@@ -47,12 +47,12 @@
               <WidgetGroup>
                 <Layout>vertical</Layout>
                 <Children>
-                      
-					<!--Template src="skin:effect_rack.xml">
-					</Template-->
-					
-					<Library>
-					</Library>
+                  
+                  <!--Template src="skin:effect_rack.xml">
+                  </Template-->
+                  
+                  <Library>
+                  </Library>
                 </Children>
               </WidgetGroup>
               

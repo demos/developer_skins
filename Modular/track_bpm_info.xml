@@ -41,6 +41,7 @@ Description: bpm, pitch, key
 			</NumberBpm>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">3</SetVariable>
 				<SetVariable name="height">3</SetVariable>
 			</Template>
 			
@@ -51,10 +52,12 @@ Description: bpm, pitch, key
 			</NumberRate>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">10</SetVariable>
 				<SetVariable name="height">10</SetVariable>
 			</Template>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">9</SetVariable>
 				<SetVariable name="height">9</SetVariable>
 			</Template>
 			
@@ -74,6 +77,7 @@ Description: bpm, pitch, key
 			</Key>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">0</SetVariable>
 				<SetVariable name="height">0</SetVariable>
 			</Template>
 			

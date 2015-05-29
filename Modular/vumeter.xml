@@ -21,6 +21,7 @@ Description: vumeter and peak indicator.
 <!--
 				<SetVariable name="height" expression="margin_top"/>
 -->
+				<SetVariable name="width" expression="0"/>
 				<SetVariable name="height" expression="0"/>
 			</Template>
 			
@@ -37,6 +38,7 @@ Description: vumeter and peak indicator.
 			</StatusLight>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width" expression="space"/>
 				<SetVariable name="height" expression="space"/>
 			</Template>
 			

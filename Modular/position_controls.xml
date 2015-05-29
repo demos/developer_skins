@@ -19,6 +19,7 @@ Track control panel.
 		<SetVariable name="channel">[Channel<Variable name="i"/>]</SetVariable>
 		
 		<Template src="skin:spacer_vx.xml">
+			<SetVariable name="width">8</SetVariable>
 			<SetVariable name="height">8</SetVariable>
 		</Template>
 		
@@ -65,6 +66,7 @@ Track control panel.
 		</PushButton>
 		
 		<Template src="skin:spacer_vx.xml">
+			<SetVariable name="width">5</SetVariable>
 			<SetVariable name="height">5</SetVariable>
 		</Template>
 		
@@ -113,6 +115,7 @@ Track control panel.
 		</WidgetGroup>
 		
 		<Template src="skin:spacer_vx.xml">
+			<SetVariable name="width">5</SetVariable>
 			<SetVariable name="height">5</SetVariable>
 		</Template>
 		
@@ -146,6 +149,7 @@ Track control panel.
 		
 		
 		<Template src="skin:spacer_vx.xml">
+			<SetVariable name="width">6</SetVariable>
 			<SetVariable name="height">6</SetVariable>
 		</Template>
 		
@@ -184,6 +188,7 @@ Track control panel.
 				</PushButton>
 				
 				<Template src="skin:spacer_vx.xml">
+					<SetVariable name="width">3</SetVariable>
 					<SetVariable name="height">3</SetVariable>
 				</Template>
 				
@@ -212,6 +217,7 @@ Track control panel.
 		</WidgetGroup>
 		
 		<Template src="skin:spacer_vx.xml">
+			<SetVariable name="width">7</SetVariable>
 			<SetVariable name="height">7</SetVariable>
 		</Template>
 		

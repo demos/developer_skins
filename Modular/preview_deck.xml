@@ -19,6 +19,7 @@ Description: preview deck
 		<Children>
 			
 			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">3</SetVariable>
 				<SetVariable name="height">3</SetVariable>
 			</Template>
 			
@@ -107,6 +108,7 @@ Description: preview deck
 							</PushButton>
 							
 							<Template src="skin:spacer_vx.xml">
+								<SetVariable name="width">3</SetVariable>
 								<SetVariable name="height">3</SetVariable>
 							</Template>
 							
@@ -141,6 +143,7 @@ Description: preview deck
 							</Overview>
 							
 							<Template src="skin:spacer_vx.xml">
+								<SetVariable name="width">3</SetVariable>
 								<SetVariable name="height">3</SetVariable>
 							</Template>
 							
@@ -193,6 +196,7 @@ Description: preview deck
 					</WidgetGroup>
 					
 					<Template src="skin:spacer_vx.xml">
+						<SetVariable name="width">3</SetVariable>
 						<SetVariable name="height">3</SetVariable>
 					</Template>
 					
