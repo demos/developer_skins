@@ -33,7 +33,7 @@
 			expr-height="height"
 			style="fill:#191919; stroke-width:0; prop('fill', 'background_color');" />
 	
-	
+	<!-- cannot translate the circle here as it will turn on itself -->
 	<g>
 		
 		<circle	cx="26" cy="26" r="26"
@@ -48,14 +48,17 @@
 				expr-r="shapeRadius - 2"
 				style="fill: #000000;" />
 		
+		<line	x1="1.5" y1="20" x2="20" y2="20"
+				expr-y1	= "centerY + 0.5"
+				expr-x2	= "centerX"
+				expr-y2	= "centerY + 0.5"
+				style="prop('stroke', 'color'); stroke-width: 1; stroke-opacity: 0.8;"/>
+		
 		<circle	cx="26" cy="26" r="20.5"
 				expr-cx="centerX"
 				expr-cy="centerY"
 				expr-r="shapeRadius - 1"
 				style="fill: url(#grad_light);" />
-		
-		<circle	cx="20" cy="20" r="3"
-				style="fill: #ff00ff; prop('fill', 'color');" />
 		
 	</g>
 </svg>
