@@ -80,13 +80,10 @@ QTableView::item:selected {
   background-color: #725309;
 }*/
 
-/**/
-#LibraryBPMWidget,#LibraryBPMButton, #LibraryBPMSpinBox {
-  background-color: #888888; 
-}
-LibraryBPMWidget::indicator:checked { background: url(skin:/style/style_checkbox_checked.png);}
-LibraryBPMWidget::indicator:unchecked { background: url(skin:/style/style_checkbox_unchecked.png);}
-/**/
+/* BPM lock icon in the library "BPM" column. */
+#LibraryBPMButton::indicator:checked { image: url(:/images/library/ic_library_checked.png); }
+#LibraryBPMButton::indicator:unchecked { image: url(:/images/library/ic_library_unchecked.png); }
+
 
 /* Button in library "Preview" column */
 QPushButton#LibraryPreviewButton { 
