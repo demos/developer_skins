@@ -10,7 +10,7 @@ Description: Spacer with fixed sizes
     <Style>
       /** /
       QGroupBox {
-        border              : 1px solid green;
+        border              : 0px solid green;
         background-color    : #003300;
       }
       /**/

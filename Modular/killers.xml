@@ -29,21 +29,27 @@ Description: Frequency killers
 			<WidgetGroup>
 				<Layout>vertical</Layout>
 				<SizePolicy>min,f</SizePolicy>
-				<MinimumSize>-1,66</MinimumSize>
-				<MaximumSize>-1,66</MaximumSize>
+				<MinimumSize>-1,70</MinimumSize>
+				<MaximumSize>-1,70</MaximumSize>
 				<Children>
 					
 					<Template src="skin:btn_killer.xml">
 						<SetVariable name="frequency">High</SetVariable>
 					</Template>
 					
-					<Template src="skin:spacer_v.xml"/>
+                    <Template src="skin:spacer_vx.xml">
+                        <SetVariable name="width">1</SetVariable>
+                        <SetVariable name="height">8</SetVariable>
+                    </Template>
 					
 					<Template src="skin:btn_killer.xml">
 						<SetVariable name="frequency">Mid</SetVariable>
 					</Template>
 					
-					<Template src="skin:spacer_v.xml"/>
+                    <Template src="skin:spacer_vx.xml">
+                        <SetVariable name="width">1</SetVariable>
+                        <SetVariable name="height">8</SetVariable>
+                    </Template>
 					
 					<Template src="skin:btn_killer.xml">
 						<SetVariable name="frequency">Low</SetVariable>
@@ -52,6 +58,11 @@ Description: Frequency killers
 				</Children>
 			</WidgetGroup>
 			
+			<Template src="skin:spacer_vx.xml">
+				<SetVariable name="width">1</SetVariable>
+				<SetVariable name="height">0</SetVariable>
+			</Template>
+            
 		</Children>
 	</WidgetGroup>
 	

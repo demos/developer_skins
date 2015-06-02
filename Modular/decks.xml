@@ -237,7 +237,7 @@ Description: decks
           
           <Template src="skin:spacer_vx.xml">
             <SetVariable name="width">25</SetVariable>
-            <SetVariable name="height">25</SetVariable>
+            <SetVariable name="height">26</SetVariable>
           </Template>
           
           <Template src="skin:killers.xml">

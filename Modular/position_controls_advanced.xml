@@ -115,9 +115,6 @@ Track control panel.
 							<Number>1</Number>
 							<SetVariable name="border_color" expression="color"/>
 							<SetVariable name="text_color" expression="color"/>
-<!--
-<SetVariable name="buggy" expression="comment ça va toi?"/>
--->
 							<Unpressed>btn_text.svg</Unpressed>
 							<Pressed>btn_text.svg</Pressed>
 						</State>
