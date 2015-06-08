@@ -8,12 +8,11 @@
 		
 			vumeter_width	= Number( vumeter_width );
 			vumeter_height	= Number( vumeter_height );
-			margin	= Number( margin );
 			
-			shapeWidth		= vumeter_width - 1 - margin * 2;
+			shapeWidth		= vumeter_width - 1;
 			shapeHeight		= vumeter_height - 1;
 			
-			this.degreesWidth	= shapeWidth - 2;
+			this.degreesWidth	= shapeWidth - 1.5;
 			
 		// ]]>
 	</script>
@@ -29,17 +28,22 @@
 		</linearGradient>
 	</defs>
 	
+    <rect	x="0" y="0"
+            width	= "14"	expr-width	= "vumeter_width"
+            height	= "68"	expr-height	= "vumeter_height"
+            style="fill: #0000ff;" />
+    
 	<g transform="translate( 0.5, 0.5 )">
 	
-		<rect	x="m" expr-x="margin" y="0"
+		<rect	x="0" y="0"
 				width	= "14"	expr-width	= "shapeWidth"
 				height	= "68"	expr-height	= "shapeHeight"
 				style="fill: #191919; stroke-width:1; stroke:#666666;" />
 		
 		<!-- degrees -->
 		<line
-			x1="7"		expr-x1="shapeWidth / 2 + margin"
-			x2="7"		expr-x2="shapeWidth / 2 + margin"
+			x1="7"		expr-x1="shapeWidth / 2"
+			x2="7"		expr-x2="shapeWidth / 2"
 			y1="1.5"
 			y2="66.5"	expr-y2="shapeHeight - 1"
 			stroke-dasharray="1, 1"

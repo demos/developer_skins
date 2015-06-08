@@ -10,7 +10,6 @@
     <attributes>
       <attribute config_key="[Master],num_decks">0</attribute>
       <attribute config_key="[Master],num_preview_decks">0</attribute>
-      <!--Optionally, make elements visible on skin load-->
     </attributes>
   </manifest>
   
@@ -23,14 +22,26 @@
   
   <Children>
     
-      <Template src="skin:wvumeter/wvumeter.xml"/>
-      <Template src="skin:wstatuslight/wstatuslight.xml"/>
-      <Template src="skin:wstarrating/wstarrating.xml"/>
-      <Template src="skin:wspinny/wspinny.xml"/>
-      <Template src="skin:wslidercomposed/wslidercomposed.xml"/>
-      <Template src="skin:wcoverart/wcoverart.xml"/>
-      <Template src="skin:wknobcomposed/wknobcomposed.xml"/>
-      <Template src="skin:wpushbutton/wpushbutton.xml"/>
+    
+    <Label>
+      <Text>Working</Text>
+    </Label>
+    <Template src="skin:wvumeter/wvumeter.xml"/>                                <!-- https://github.com/mixxxdj/mixxx/pull/611 -->
+    <Template src="skin:wstarrating/wstarrating.xml"/>                          <!-- https://github.com/mixxxdj/mixxx/pull/613 --> 
+    
+    <Label>
+      <Text>Drawn but not working</Text>
+    </Label>
+    <Template src="skin:wspinny/wspinny.xml"/>
+    <Template src="skin:wslidercomposed/wslidercomposed.xml"/>
+    <Template src="skin:wcoverart/wcoverart.xml"/>
+    <Template src="skin:wknobcomposed/wknobcomposed.xml"/>
+    <Template src="skin:wpushbutton/wpushbutton.xml"/>
+    
+    <Label>
+      <Text>Not drawn</Text>
+    </Label>
+    <Template src="skin:wstatuslight/wstatuslight.xml"/>
     
   </Children>
 </skin>

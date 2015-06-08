@@ -16,12 +16,12 @@ Description: vumeter.
             <Text>WVuMeter</Text>
         </Label>
         
+        <!-- vertical -->
         <!-- variables used by the SVG -->
         <SetVariable name="vumeter_height" expression="50"/>
         <SetVariable name="vumeter_width" expression="15"/>
         <SetVariable name="margin" expression="0"/>
         
-        <!-- vertical -->
         <WidgetGroup>
           <ObjectName>Wrapper</ObjectName>
           <Layout>horizontal</Layout>
@@ -60,8 +60,32 @@ Description: vumeter.
           </Children>
         </WidgetGroup>
         
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <VuMeter>
+                <ObjectName>NegativeMarginBox</ObjectName>
+                <TooltipId>channel_VuMeter</TooltipId>
+                <PathVu>wvumeter/vumeter_on.svg</PathVu>
+                <PathBack>wvumeter/vumeter_off.svg</PathBack>
+                <Horizontal>false</Horizontal>
+                <PeakHoldSize><Variable name="vumeter_height"/></PeakHoldSize>
+                <PeakHoldTime>500</PeakHoldTime>
+                <PeakFallTime>50</PeakFallTime>
+                <PeakFallStep>0</PeakFallStep>
+            </VuMeter>
+          </Children>
+        </WidgetGroup>
+        
         
         <!-- horizontal -->
+        <!-- variables used by the SVG -->
+        <SetVariable name="vumeter_height" expression="15"/>
+        <SetVariable name="vumeter_width" expression="50"/>
+        <SetVariable name="margin" expression="0"/>
+        
         <WidgetGroup>
           <ObjectName>Wrapper</ObjectName>
           <Layout>horizontal</Layout>
@@ -70,8 +94,8 @@ Description: vumeter.
             <VuMeter>
                 <ObjectName>NoStyle</ObjectName>
                 <TooltipId>channel_VuMeter</TooltipId>
-                <PathVu>wvumeter/vumeter_on.svg</PathVu>
-                <PathBack>wvumeter/vumeter_off.svg</PathBack>
+                <PathVu>wvumeter/vumeter_on_horizontal.svg</PathVu>
+                <PathBack>wvumeter/vumeter_off_horizontal.svg</PathBack>
                 <Horizontal>true</Horizontal>
                 <PeakHoldSize><Variable name="vumeter_height"/></PeakHoldSize>
                 <PeakHoldTime>500</PeakHoldTime>
@@ -89,8 +113,27 @@ Description: vumeter.
             <VuMeter>
                 <ObjectName>PositiveBox</ObjectName>
                 <TooltipId>channel_VuMeter</TooltipId>
-                <PathVu>wvumeter/vumeter_on.svg</PathVu>
-                <PathBack>wvumeter/vumeter_off.svg</PathBack>
+                <PathVu>wvumeter/vumeter_on_horizontal.svg</PathVu>
+                <PathBack>wvumeter/vumeter_off_horizontal.svg</PathBack>
+                <Horizontal>true</Horizontal>
+                <PeakHoldSize><Variable name="vumeter_height"/></PeakHoldSize>
+                <PeakHoldTime>500</PeakHoldTime>
+                <PeakFallTime>50</PeakFallTime>
+                <PeakFallStep>0</PeakFallStep>
+            </VuMeter>
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <VuMeter>
+                <ObjectName>NegativeMarginBox</ObjectName>
+                <TooltipId>channel_VuMeter</TooltipId>
+                <PathVu>wvumeter/vumeter_on_horizontal.svg</PathVu>
+                <PathBack>wvumeter/vumeter_off_horizontal.svg</PathBack>
                 <Horizontal>true</Horizontal>
                 <PeakHoldSize><Variable name="vumeter_height"/></PeakHoldSize>
                 <PeakHoldTime>500</PeakHoldTime>
