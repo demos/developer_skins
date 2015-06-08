@@ -23,14 +23,6 @@
   background-color  : #00ff00;
 }
 
-#NegativeMarginBox {
-  margin-right      : -10px;
-  border            : 1px solid #ffffff;
-  padding           : 10px 5px 0px 3px;
-  color             : #ff0000;
-  background-color  : #00ff00;
-}
-
 #Wrapper {
   margin            : 0;
   padding           : 0;
