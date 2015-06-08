@@ -1,0 +1,83 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WPushButton</Text>
+        </Label>
+        
+        <SetVariable name="text">text</SetVariable>
+        <SetVariable name="width">45</SetVariable>
+        <SetVariable name="height">20</SetVariable>
+        <SetVariable name="color">#00ff00</SetVariable>
+        <SetVariable name="text_size">11</SetVariable>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+              <PushButton>
+                <ObjectName>NoStyle</ObjectName>
+                <TooltipId>rate_temp_down</TooltipId>
+                <NumberStates>2</NumberStates>
+                <State>
+                  <Number>0</Number>
+                  <Pressed>wpushbutton/btn_text.svg</Pressed>
+                  <Unpressed>wpushbutton/btn_text.svg</Unpressed>
+                </State>
+                <State>
+                  <Number>1</Number>
+                  <Pressed>wpushbutton/btn_text.svg</Pressed>
+                  <Unpressed>wpushbutton/btn_text.svg</Unpressed>
+                  <SetVariable name="border_color" expression="'#ff0000'"/>
+                  <SetVariable name="text_color" expression="'#ff0000'"/>
+                </State>
+              </PushButton>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+              <PushButton>
+                <ObjectName>PositiveBox</ObjectName>
+                <TooltipId>rate_temp_down</TooltipId>
+                <NumberStates>2</NumberStates>
+                <State>
+                  <Number>0</Number>
+                  <Pressed>wpushbutton/btn_text.svg</Pressed>
+                  <Unpressed>wpushbutton/btn_text.svg</Unpressed>
+                </State>
+                <State>
+                  <Number>1</Number>
+                  <Pressed>wpushbutton/btn_text.svg</Pressed>
+                  <Unpressed>wpushbutton/btn_text.svg</Unpressed>
+                  <SetVariable name="border_color" expression="'#ff0000'"/>
+                  <SetVariable name="text_color" expression="'#ff0000'"/>
+                </State>
+              </PushButton>
+            
+          </Children>
+        </WidgetGroup>
+        
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

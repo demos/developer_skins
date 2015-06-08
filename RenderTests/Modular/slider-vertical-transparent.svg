@@ -1,0 +1,10 @@
+<svg	xmlns= "http://www.w3.org/2000/svg"
+		width="15"	expr-width="width"
+		height="79"	expr-height="height"
+		expr-viewBox="'0 0 ' + width + ' ' + height" >
+	
+	<!--rect
+		width="15"	expr-width="width"
+		height="79"	expr-height="height"
+		style="stroke: #00dd00; fill:transparent; stroke-width: 2px;" /-->
+</svg>

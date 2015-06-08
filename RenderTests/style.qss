@@ -1,0 +1,31 @@
+/*
+#Mixxx {
+	background-color	: #191919;
+	color				: #ffffff;
+}
+*/
+
+#WidgetName {
+  background-color  : #ffffff;
+}
+
+#Row {
+  qproperty-layoutAlignment : 'AlignLeft | AlignTop';
+  qproperty-layoutSpacing   : 10;
+  border                    : 1px solid #000000;
+}
+
+#PositiveBox {
+  margin            : 10px 5px 0px 3px;
+  border            : 1px solid #ffffff;
+  padding           : 10px 5px 0px 3px;
+  color             : #ff0000;
+  background-color  : #00ff00;
+}
+
+#Wrapper {
+  margin            : 0;
+  padding           : 0;
+  border            : 1px solid #ff0000;
+}
+

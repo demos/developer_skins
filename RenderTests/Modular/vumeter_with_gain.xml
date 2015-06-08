@@ -1,0 +1,97 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter and peak indicator.
+-->
+<Template>
+	
+	<WidgetGroup>
+		<ObjectName>Peak-VuMeter-Gain1</ObjectName>
+		<Style>
+			/** /
+			QGroupBox { border: 1px solid red; }
+			/**/
+		</Style>
+		<Layout>vertical</Layout>
+		<SizePolicy>max,max</SizePolicy>
+		<MinimumSize>15,<Variable name="wrapper_height"/></MinimumSize>
+		<MaximumSize>15,<Variable name="wrapper_height"/></MaximumSize>
+		<Children>
+			
+			
+			<!--SetVariable name="vumeter_height" expression="Number(height) - Number(space) - Number(peak_height)"/>
+			<SetVariable name="vumeter_width" expression="width"/-->
+            
+			<SetVariable name="vumeter_height" expression="75"/>
+			<SetVariable name="vumeter_width" expression="7"/>
+            
+			<!-- Visual - Volume peak indicator -->
+			<SetVariable name="peak_width" expression="width"/>
+			<StatusLight>
+				<ObjectName>PeakIndicator1</ObjectName>
+				<TooltipId>PeakIndicator</TooltipId>
+				<SizePolicy>min,min</SizePolicy>
+				<PathStatusLight>peak_on.svg</PathStatusLight>
+				<PathBack>peak_off.svg</PathBack>
+				<Connection>
+					<ConfigKey><Variable name="channel"/>,<Variable name="peak_control"/></ConfigKey>
+				</Connection>
+			</StatusLight>
+			
+            
+            <WidgetGroup>
+                <ObjectName>VuMeterWithGain1</ObjectName>
+                <Layout>stacked</Layout>
+                <SizePolicy>max,max</SizePolicy>
+                <MinimumSize>15,80</MinimumSize>
+                <Children>
+                    
+                    
+                    <!-- gain -->
+                    <SetVariable name="width">15</SetVariable>
+                    <SetVariable name="height">90</SetVariable>
+                    <SetVariable name="offset">7</SetVariable>
+                    <SetVariable name="margin">10.5</SetVariable>
+                    
+                    <SetVariable name="handle_width">15</SetVariable>
+                    <SetVariable name="handle_height">13</SetVariable>
+                    
+                    <SetVariable name="text">gai</SetVariable>
+                    <SetVariable name="text_x">6</SetVariable>
+                    <SetVariable name="text_y">119</SetVariable>
+                    
+                    <SliderComposed>
+                        <ObjectName>GainAboveVuMeter</ObjectName>
+                        <TooltipId>pregain</TooltipId>
+                        <Slider>slider-vertical-transparent.svg</Slider>
+                        <Handle>handle-vertical-transparent.svg</Handle>
+                        <Horizontal>false</Horizontal>
+                        <Connection>
+                            <ConfigKey><Variable name="channel"/>,pregain</ConfigKey>
+                        </Connection>
+                    </SliderComposed>
+                    
+                    <!-- Visual - Volume level display -->
+                    
+                    <VuMeter>
+                        <ObjectName>VuMeterUnderGain1</ObjectName>
+                        <TooltipId>channel_VuMeter</TooltipId>
+                        <PathVu>vumeter_on.svg</PathVu>
+                        <PathBack>vumeter_off2.svg</PathBack>
+                        <Horizontal>false</Horizontal>
+                        <PeakHoldSize>4</PeakHoldSize>
+                        <PeakHoldTime>500</PeakHoldTime>
+                        <PeakFallTime>50</PeakFallTime>
+                        <PeakFallStep>0</PeakFallStep>
+                        
+                        <Connection>
+                            <ConfigKey><Variable name="channel"/>,<Variable name="vumeter_control"/></ConfigKey>
+                        </Connection>
+                    </VuMeter>
+                    
+                </Children>
+            </WidgetGroup>
+
+		</Children>
+	</WidgetGroup>
+
+</Template>

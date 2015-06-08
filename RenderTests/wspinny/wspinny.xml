@@ -1,0 +1,64 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WSpinny</Text>
+        </Label>
+        
+        <SetVariable name="width" expression="65"/>
+        <SetVariable name="height" expression="65"/>
+        <SetVariable name="background_color">#191919</SetVariable>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <SetVariable name="color">#ff0000</SetVariable>
+            <Spinny>
+                <ObjectName>NoStyle</ObjectName>
+                <TooltipId>spinny</TooltipId>
+                <PathBackground>wspinny/spinny.svg</PathBackground>
+                <PathForeground>wspinny/spinny.svg</PathForeground>
+                <PathGhost>wspinny/spinny.svg</PathGhost>
+            </Spinny>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+            <SetVariable name="color">#00ff00</SetVariable>
+            
+            <Spinny>
+                <ObjectName>PositiveBox</ObjectName>
+                <TooltipId>spinny</TooltipId>
+                <PathBackground>wspinny/spinny.svg</PathBackground>
+                <PathForeground>wspinny/spinny.svg</PathForeground>
+                <PathGhost>wspinny/spinny.svg</PathGhost>
+            </Spinny>
+            
+          </Children>
+        </WidgetGroup>
+        
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

@@ -1,0 +1,63 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WStatusLight</Text>
+        </Label>
+        
+        <!-- variables used by the SVG -->
+        <SetVariable name="peak_width" expression="15"/>
+        <SetVariable name="peak_height" expression="15"/>
+        <SetVariable name="margin" expression="0"/>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <StatusLight>
+                <ObjectName>NoStyle</ObjectName>
+                <TooltipId>PeakIndicator</TooltipId>
+                <SizePolicy>min,min</SizePolicy>
+                <PathStatusLight>wstatuslight/peak_on.svg</PathStatusLight>
+                <PathBack>wstatuslight/peak_off.svg</PathBack>
+            </StatusLight>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+            <SetVariable name="peak_width" expression="15"/>
+            <StatusLight>
+                <ObjectName>PositiveBox</ObjectName>
+                <TooltipId>PeakIndicator</TooltipId>
+                <SizePolicy>min,min</SizePolicy>
+                <PathStatusLight>wstatuslight/peak_on.svg</PathStatusLight>
+                <PathBack>wstatuslight/peak_off.svg</PathBack>
+            </StatusLight>
+              
+          </Children>
+        </WidgetGroup>
+        
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

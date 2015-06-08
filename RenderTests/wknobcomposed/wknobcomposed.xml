@@ -1,0 +1,69 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WKnobComposed</Text>
+        </Label>
+        
+        <!-- gain -->
+        <SetVariable name="width">15</SetVariable>
+        <SetVariable name="height">90</SetVariable>
+        <SetVariable name="offset">7</SetVariable>
+        <SetVariable name="margin">10.5</SetVariable>
+        <SetVariable name="handle_width">15</SetVariable>
+        <SetVariable name="handle_height">13</SetVariable>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            
+              <KnobComposed>
+                <ObjectName>NoStyle</ObjectName>
+                <Size>40f,34f</Size>
+                <Knob>wknobcomposed/knob_indicator.svg</Knob>
+                <BackPath>wknobcomposed/knob_bg.svg</BackPath>
+                <MinAngle>-135</MinAngle>
+                <MaxAngle>135</MaxAngle>
+              </KnobComposed>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+              <KnobComposed>
+                <ObjectName>PositiveBox</ObjectName>
+                <Size>40f,34f</Size>
+                <Knob>wknobcomposed/knob_indicator.svg</Knob>
+                <BackPath>wknobcomposed/knob_bg.svg</BackPath>
+                <MinAngle>-135</MinAngle>
+                <MaxAngle>135</MaxAngle>
+              </KnobComposed>
+            
+            
+          </Children>
+        </WidgetGroup>
+        
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

@@ -1,0 +1,36 @@
+<!DOCTYPE skin>
+<skin>
+  <manifest>
+    <title>RenderTests</title>
+    <author>jclaveau</author>
+    <version>1.13.0.01</version>
+    <description>Tests of styling support for custom widgets</description>
+    <language>en</language>
+    <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
+    <attributes>
+      <attribute config_key="[Master],num_decks">0</attribute>
+      <attribute config_key="[Master],num_preview_decks">0</attribute>
+      <!--Optionally, make elements visible on skin load-->
+    </attributes>
+  </manifest>
+  
+  <ObjectName>Mixxx</ObjectName>
+  <Style src="skin:style.qss"/>
+  
+  <MinimumSize>1024,768</MinimumSize>
+  <SizePolicy>me,me</SizePolicy>
+  <Layout>vertical</Layout>
+  
+  <Children>
+    
+      <Template src="skin:wvumeter/wvumeter.xml"/>
+      <Template src="skin:wstatuslight/wstatuslight.xml"/>
+      <Template src="skin:wstarrating/wstarrating.xml"/>
+      <Template src="skin:wspinny/wspinny.xml"/>
+      <Template src="skin:wslidercomposed/wslidercomposed.xml"/>
+      <Template src="skin:wcoverart/wcoverart.xml"/>
+      <Template src="skin:wknobcomposed/wknobcomposed.xml"/>
+      <Template src="skin:wpushbutton/wpushbutton.xml"/>
+    
+  </Children>
+</skin>

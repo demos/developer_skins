@@ -1,0 +1,121 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WSliderComposed</Text>
+        </Label>
+        
+        <!-- vertical -->
+        <!-- variables used by the SVG -->
+        <SetVariable name="width">15</SetVariable>
+        <SetVariable name="height">90</SetVariable>
+        <SetVariable name="offset">7</SetVariable>
+        <SetVariable name="margin">10.5</SetVariable>
+        <SetVariable name="handle_width">15</SetVariable>
+        <SetVariable name="handle_height">13</SetVariable>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <SliderComposed>
+                <ObjectName>NoStyle</ObjectName>
+                <TooltipId>pregain</TooltipId>
+                <Slider>wslidercomposed/slider-vertical.svg</Slider>
+                <Handle>wslidercomposed/handle-vertical.svg</Handle>
+                <Horizontal>false</Horizontal>
+                <Connection>
+                    <ConfigKey>channel1,rate</ConfigKey>
+                </Connection>
+            </SliderComposed>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+            <SliderComposed>
+                <ObjectName>PositiveBox</ObjectName>
+                <TooltipId>pregain</TooltipId>
+                <Slider>wslidercomposed/slider-vertical.svg</Slider>
+                <Handle>wslidercomposed/handle-vertical.svg</Handle>
+                <Horizontal>false</Horizontal>
+                <Connection>
+                    <ConfigKey>channel1,rate</ConfigKey>
+                </Connection>
+            </SliderComposed>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <!-- horizontal -->
+        <!-- variables used by the SVG -->
+        <SetVariable name="width">90</SetVariable>
+        <SetVariable name="height">15</SetVariable>
+        <SetVariable name="offset">7</SetVariable>
+        <SetVariable name="margin">10.5</SetVariable>
+        <SetVariable name="handle_width">15</SetVariable>
+        <SetVariable name="handle_height">13</SetVariable>
+        
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <SliderComposed>
+                <ObjectName>NoStyle</ObjectName>
+                <TooltipId>pregain</TooltipId>
+                <Slider>wslidercomposed/slider-horizontal.svg</Slider>
+                <Handle>wslidercomposed/handle-horizontal.svg</Handle>
+                <Horizontal>true</Horizontal>
+                <Connection>
+                    <ConfigKey>channel1,rate</ConfigKey>
+                </Connection>
+            </SliderComposed>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+            <SliderComposed>
+                <ObjectName>PositiveBox</ObjectName>
+                <TooltipId>pregain</TooltipId>
+                <Slider>wslidercomposed/slider-horizontal.svg</Slider>
+                <Handle>wslidercomposed/handle-horizontal.svg</Handle>
+                <Horizontal>true</Horizontal>
+                <Connection>
+                    <ConfigKey>channel1,rate</ConfigKey>
+                </Connection>
+            </SliderComposed>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>
