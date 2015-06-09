@@ -9,7 +9,7 @@
     <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
     <attributes>
       <attribute config_key="[Master],num_decks">0</attribute>
-      <attribute config_key="[Master],num_preview_decks">0</attribute>
+      <attribute config_key="[Master],num_preview_decks">1</attribute>
     </attributes>
   </manifest>
   
@@ -19,39 +19,127 @@
   <MinimumSize>1024,768</MinimumSize>
   <SizePolicy>me,me</SizePolicy>
   <Layout>vertical</Layout>
-  
   <Children>
-    
-    
+  
     <Label>
       <Text>Working</Text>
     </Label>
-    <Template src="skin:wstatuslight/wstatuslight.xml"/>
-    <Template src="skin:wvumeter/wvumeter.xml"/>                                <!-- https://github.com/mixxxdj/mixxx/pull/611 -->
-    <Template src="skin:wstarrating/wstarrating.xml"/>                          <!-- https://github.com/mixxxdj/mixxx/pull/613 --> 
-    <Template src="skin:wlabel/wlabel.xml"/>
-    <Template src="skin:wtime/wtime.xml"/>
+    
+    <WidgetGroup>
+      <ObjectName>Working</ObjectName>
+      <SizePolicy>me,me</SizePolicy>
+      <Layout>horizontal</Layout>
+      <Children>
+        
+        <WidgetGroup>
+          <ObjectName>Left-Column</ObjectName>
+          <SizePolicy>me,me</SizePolicy>
+          <Layout>vertical</Layout>
+          <Children>
+              
+            <Template src="skin:wstatuslight/wstatuslight.xml"/>
+            <Template src="skin:wvumeter/wvumeter.xml"/>                                <!-- https://github.com/mixxxdj/mixxx/pull/611 -->
+            <Template src="skin:wstarrating/wstarrating.xml"/>                          <!-- https://github.com/mixxxdj/mixxx/pull/613 --> 
+            <Template src="skin:wslidercomposed/wslidercomposed.xml"/>
+            <Template src="skin:wlibrarysidebar/wlibrarysidebar.xml"/>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Right-Column</ObjectName>
+          <SizePolicy>me,me</SizePolicy>
+          <Layout>vertical</Layout>
+          <Children>
+            
+            <Template src="skin:wlabel/wlabel.xml"/>
+            <Template src="skin:wtime/wtime.xml"/>
+            <Template src="skin:wsearchlineedit/wsearchlineedit.xml"/>
+            <Template src="skin:wlibrary/wlibrary.xml"/>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
     
     <Label>
       <Text>Drawn but not working</Text>
     </Label>
-    <Template src="skin:wspinny/wspinny.xml"/>
-    <Template src="skin:wslidercomposed/wslidercomposed.xml"/>
-    <Template src="skin:wcoverart/wcoverart.xml"/>
-    <Template src="skin:wknobcomposed/wknobcomposed.xml"/>
-    <Template src="skin:wpushbutton/wpushbutton.xml"/>
+    
+    <WidgetGroup>
+      <ObjectName>Partially-Working</ObjectName>
+      <SizePolicy>me,me</SizePolicy>
+      <Layout>horizontal</Layout>
+      <Children>
+        
+        <WidgetGroup>
+          <ObjectName>Left-Column</ObjectName>
+          <SizePolicy>me,me</SizePolicy>
+          <Layout>vertical</Layout>
+          <Children>
+            <Template src="skin:wspinny/wspinny.xml"/>
+            <Template src="skin:wcoverart/wcoverart.xml"/>
+            <Template src="skin:wknobcomposed/wknobcomposed.xml"/>
+            <Template src="skin:wpushbutton/wpushbutton.xml"/>
+            <Template src="skin:wknob/wknob.xml"/>
+            
+            <Template src="skin:wvisual/wvisual.xml"/>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Right-Column</ObjectName>
+          <SizePolicy>me,me</SizePolicy>
+          <Layout>vertical</Layout>
+          <Children>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
     
     <Label>
       <Text>Not drawn</Text>
     </Label>
     
-    <!-- TODO :
-    + wtracktext
-    + wkey
-    + wknob
-    + wnumber/db/pos/rate
-    + searchlineedit
-    -->
+    <WidgetGroup>
+      <ObjectName>Not-Working</ObjectName>
+      <SizePolicy>me,me</SizePolicy>
+      <Layout>horizontal</Layout>
+      <Children>
+        
+          <!-- TODO :
+          + wtracktext
+          + wkey
+          + wnumber/db/pos/rate
+          + waveform
+          -->
+            
+        <WidgetGroup>
+          <ObjectName>Left-Column</ObjectName>
+          <SizePolicy>me,me</SizePolicy>
+          <Layout>vertical</Layout>
+          <Children>
+            
+            <Template src="skin:woverview/woverview.xml"/>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Right-Column</ObjectName>
+          <SizePolicy>me,me</SizePolicy>
+          <Layout>vertical</Layout>
+          <Children>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
     
   </Children>
 </skin>

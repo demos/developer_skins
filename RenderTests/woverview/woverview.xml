@@ -1,0 +1,95 @@
+<!DOCTYPE template>
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WOverview</Text>
+        </Label>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <Overview>
+              <ObjectName>NoStyle</ObjectName>
+              <TooltipId>waveform_overview</TooltipId>
+              <Group>[PreviewDeck1]</Group>
+              <BgColor>#8D98A3</BgColor>
+              <SignalHighColor>#FFE300</SignalHighColor>
+              <SignalMidColor>#0099FF</SignalMidColor>
+              <SignalLowColor>#FF0035</SignalLowColor>
+              <SignalColor>#FF8000</SignalColor>
+              <PlayPosColor>#00FF00</PlayPosColor>
+              <DefaultMark>
+                <Align>bottom</Align>
+                <Color>#FFFFFF</Color>
+                <TextColor>#00FF00</TextColor>
+                <Text> %1 </Text>
+              </DefaultMark>
+              <Mark>
+                <Control>cue_point</Control>
+                <Text> C </Text>
+                <Align>top</Align>
+                <Color>#FF001C</Color>
+                <TextColor>#00FF00</TextColor>
+              </Mark>
+              <Connection>
+                <ConfigKey>[PreviewDeck1],playposition</ConfigKey>
+                <EmitOnDownPress>false</EmitOnDownPress>
+              </Connection>
+            </Overview>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <Overview>
+              <ObjectName>PositiveBox</ObjectName>
+              <TooltipId>waveform_overview</TooltipId>
+              <Group>[PreviewDeck1]</Group>
+              <BgColor>#8D98A3</BgColor>
+              <SignalHighColor>#FFE300</SignalHighColor>
+              <SignalMidColor>#0099FF</SignalMidColor>
+              <SignalLowColor>#FF0035</SignalLowColor>
+              <SignalColor>#FF8000</SignalColor>
+              <PlayPosColor>#00FF00</PlayPosColor>
+              <DefaultMark>
+                <Align>bottom</Align>
+                <Color>#FFFFFF</Color>
+                <TextColor>#00FF00</TextColor>
+                <Text> %1 </Text>
+              </DefaultMark>
+              <Mark>
+                <Control>cue_point</Control>
+                <Text> C </Text>
+                <Align>top</Align>
+                <Color>#FF001C</Color>
+                <TextColor>#00FF00</TextColor>
+              </Mark>
+              <Connection>
+                <ConfigKey>[PreviewDeck1],playposition</ConfigKey>
+                <EmitOnDownPress>false</EmitOnDownPress>
+              </Connection>
+            </Overview>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

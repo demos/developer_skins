@@ -1,0 +1,57 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WKnob</Text>
+        </Label>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <Knob>
+              <TooltipId>filterHigh</TooltipId>
+              <ObjectName>NoStyle</ObjectName>
+              <NumberStates>64</NumberStates>
+              <Path>wknob/knob_rotary_s%1.png</Path>
+              <Connection>
+                <ConfigKey>[Channel1],filterHigh</ConfigKey>
+              </Connection>
+            </Knob>
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <Knob>
+              <TooltipId>filterHigh</TooltipId>
+              <ObjectName>PositiveBox</ObjectName>
+              <NumberStates>64</NumberStates>
+              <Path>wknob/knob_rotary_s%1.png</Path>
+              <Connection>
+                <ConfigKey>[Channel1],filterHigh</ConfigKey>
+              </Connection>
+            </Knob>
+          </Children>
+        </WidgetGroup>
+        
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

@@ -1,0 +1,45 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WSearchLineEdit</Text>
+        </Label>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <SearchBox>
+              <ObjectName>NoStyle</ObjectName>
+            </SearchBox>
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <SearchBox>
+              <ObjectName>PositiveBox</ObjectName>
+            </SearchBox>
+          </Children>
+        </WidgetGroup>
+        
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>
