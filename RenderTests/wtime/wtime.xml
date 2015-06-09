@@ -1,0 +1,54 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WTime</Text>
+        </Label>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <Time>
+              <ObjectName>NoStyle</ObjectName>
+              <TooltipId>time</TooltipId>
+              <ShowSeconds>false</ShowSeconds>
+              <ClockFormat>24</ClockFormat>
+            </Time>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+            <Time>
+              <ObjectName>PositiveBox</ObjectName>
+              <TooltipId>time</TooltipId>
+              <ShowSeconds>false</ShowSeconds>
+              <ClockFormat>24</ClockFormat>
+            </Time>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

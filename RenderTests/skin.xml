@@ -26,8 +26,11 @@
     <Label>
       <Text>Working</Text>
     </Label>
+    <Template src="skin:wstatuslight/wstatuslight.xml"/>
     <Template src="skin:wvumeter/wvumeter.xml"/>                                <!-- https://github.com/mixxxdj/mixxx/pull/611 -->
     <Template src="skin:wstarrating/wstarrating.xml"/>                          <!-- https://github.com/mixxxdj/mixxx/pull/613 --> 
+    <Template src="skin:wlabel/wlabel.xml"/>
+    <Template src="skin:wtime/wtime.xml"/>
     
     <Label>
       <Text>Drawn but not working</Text>
@@ -41,7 +44,14 @@
     <Label>
       <Text>Not drawn</Text>
     </Label>
-    <Template src="skin:wstatuslight/wstatuslight.xml"/>
+    
+    <!-- TODO :
+    + wtracktext
+    + wkey
+    + wknob
+    + wnumber/db/pos/rate
+    + searchlineedit
+    -->
     
   </Children>
 </skin>

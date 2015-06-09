@@ -1,0 +1,50 @@
+<!DOCTYPE template>
+<!--
+Description: vumeter.
+-->
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WLabel</Text>
+        </Label>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            
+            <Label>
+                <ObjectName>NoStyle</ObjectName>
+                <Text>label</Text>
+            </Label>
+            
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+              
+            <Label>
+                <ObjectName>PositiveBox</ObjectName>
+                <Text>label</Text>
+            </Label>
+            
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>
