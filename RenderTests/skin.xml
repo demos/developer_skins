@@ -8,7 +8,7 @@
     <language>en</language>
     <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
     <attributes>
-      <attribute config_key="[Master],num_decks">0</attribute>
+      <attribute config_key="[Master],num_decks">1</attribute>
       <attribute config_key="[Master],num_preview_decks">1</attribute>
     </attributes>
   </manifest>
@@ -42,6 +42,7 @@
             <Template src="skin:wstarrating/wstarrating.xml"/>                          <!-- https://github.com/mixxxdj/mixxx/pull/613 --> 
             <Template src="skin:wslidercomposed/wslidercomposed.xml"/>
             <Template src="skin:wlibrarysidebar/wlibrarysidebar.xml"/>
+            <Template src="skin:wcombobox/wcombobox.xml"/>
             
           </Children>
         </WidgetGroup>
@@ -56,6 +57,9 @@
             <Template src="skin:wtime/wtime.xml"/>
             <Template src="skin:wsearchlineedit/wsearchlineedit.xml"/>
             <Template src="skin:wlibrary/wlibrary.xml"/>
+            <Template src="skin:wtrackproperty/wtrackproperty.xml"/>
+            <Template src="skin:wkey/wkey.xml"/>
+            <Template src="skin:wtext/wtext.xml"/>
             
           </Children>
         </WidgetGroup>
@@ -84,8 +88,6 @@
             <Template src="skin:wpushbutton/wpushbutton.xml"/>
             <Template src="skin:wknob/wknob.xml"/>
             
-            <Template src="skin:wvisual/wvisual.xml"/>
-            
           </Children>
         </WidgetGroup>
         
@@ -113,9 +115,24 @@
         
           <!-- TODO :
           + wtracktext
-          + wkey
-          + wnumber/db/pos/rate
-          + waveform
+          + splitter
+          + EffectPushButton
+          + Text
+          + Display
+          + NumberRate
+          + NumberPos
+          + Number
+          + NumberDb
+          + TableView
+          + WidgetGroup
+          + WidgetStack
+          + SizeAwareStack
+          + EffectChainName
+          + EffectName
+          + EffectParameterName
+          + EffectButtonParameterName
+          + SingletonDefinition
+          + SingletonContainer
           -->
             
         <WidgetGroup>
@@ -125,6 +142,7 @@
           <Children>
             
             <Template src="skin:woverview/woverview.xml"/>
+            <Template src="skin:wvisual/wvisual.xml"/>
             
           </Children>
         </WidgetGroup>

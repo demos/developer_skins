@@ -1,0 +1,57 @@
+<!DOCTYPE template>
+<Template>
+    
+    <WidgetGroup>
+      <ObjectName>Row</ObjectName>
+      <Layout>horizontal</Layout>
+      <SizePolicy>me,max</SizePolicy>
+      <Children>
+        
+        <Label>
+            <ObjectName>WidgetName</ObjectName>
+            <Size>150,-1</Size>
+            <Text>WCombobox</Text>
+        </Label>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <ComboBox>
+                <ObjectName>NoStyle</ObjectName>
+                <State>
+                    <Number>0</Number>
+                    <Text>Zero</Text>
+                </State>
+                <State>
+                    <Number>1</Number>
+                    <Text>One</Text>
+                </State>
+            </ComboBox>
+          </Children>
+        </WidgetGroup>
+        
+        <WidgetGroup>
+          <ObjectName>Wrapper</ObjectName>
+          <Layout>horizontal</Layout>
+          <SizePolicy>max,max</SizePolicy>
+          <Children>
+            <ComboBox>
+                <ObjectName>PositiveBox</ObjectName>
+                <State>
+                    <Number>0</Number>
+                    <Text>Zero</Text>
+                </State>
+                <State>
+                    <Number>1</Number>
+                    <Text>One</Text>
+                </State>
+            </ComboBox>
+          </Children>
+        </WidgetGroup>
+        
+      </Children>
+    </WidgetGroup>
+
+</Template>

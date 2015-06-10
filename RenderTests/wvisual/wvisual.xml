@@ -21,16 +21,17 @@
             
             <Visual>
                 <TooltipId>waveform_display</TooltipId>
-              <ObjectName>NoStyle</ObjectName>
+                <ObjectName>NoStyle</ObjectName>
                 <Channel>1</Channel>
                 <!--See comment about <Size> above-->
                 <!--<Size>i,110</Size>-->
-                <BgColor><Variable name="SignalBgColor"/></BgColor>
+                <Size>100,110</Size>
+                <BgColor>#000000</BgColor>
                 <!--<BgPixmap>style/style_bg_waveform1.png</BgPixmap>-->
-                <SignalColor><Variable name="signal_color"/></SignalColor>
-                <SignalRGBLowColor><Variable name="SignalRGBLowColor"/></SignalRGBLowColor>
-                <SignalRGBMidColor><Variable name="SignalRGBMidColor"/></SignalRGBMidColor>
-                <SignalRGBHighColor><Variable name="SignalRGBHighColor"/></SignalRGBHighColor>
+                <SignalColor>#00ff00</SignalColor>
+                <SignalRGBLowColor>#ff0000</SignalRGBLowColor>
+                <SignalRGBMidColor>#ff0000</SignalRGBMidColor>
+                <SignalRGBHighColor>#ff0000</SignalRGBHighColor>
                 <BeatColor>#ffffff</BeatColor>
                 <BeatHighlightColor></BeatHighlightColor>
                 <PlayPosColor>#00FF00</PlayPosColor>
@@ -88,16 +89,16 @@
             
             <Visual>
                 <TooltipId>waveform_display</TooltipId>
-              <ObjectName>PositiveBox</ObjectName>
+                <ObjectName>PositiveBox</ObjectName>
                 <Channel>1</Channel>
                 <!--See comment about <Size> above-->
-                <!--<Size>i,110</Size>-->
-                <BgColor><Variable name="SignalBgColor"/></BgColor>
+                <Size>100,110</Size>
+                <BgColor>#000000</BgColor>
                 <!--<BgPixmap>style/style_bg_waveform1.png</BgPixmap>-->
-                <SignalColor><Variable name="signal_color"/></SignalColor>
-                <SignalRGBLowColor><Variable name="SignalRGBLowColor"/></SignalRGBLowColor>
-                <SignalRGBMidColor><Variable name="SignalRGBMidColor"/></SignalRGBMidColor>
-                <SignalRGBHighColor><Variable name="SignalRGBHighColor"/></SignalRGBHighColor>
+                <SignalColor>#00ff00</SignalColor>
+                <SignalRGBLowColor>#ff0000</SignalRGBLowColor>
+                <SignalRGBMidColor>#ff0000</SignalRGBMidColor>
+                <SignalRGBHighColor>#ff0000</SignalRGBHighColor>
                 <BeatColor>#ffffff</BeatColor>
                 <BeatHighlightColor></BeatHighlightColor>
                 <PlayPosColor>#00FF00</PlayPosColor>

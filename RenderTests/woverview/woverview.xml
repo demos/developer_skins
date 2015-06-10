@@ -21,9 +21,10 @@
             
             <Overview>
               <ObjectName>NoStyle</ObjectName>
+              <Size>200,40</Size>
               <TooltipId>waveform_overview</TooltipId>
-              <Group>[PreviewDeck1]</Group>
-              <BgColor>#8D98A3</BgColor>
+              <Group>[Channel1]</Group>
+              <!--BgColor>#8D98A3</BgColor-->
               <SignalHighColor>#FFE300</SignalHighColor>
               <SignalMidColor>#0099FF</SignalMidColor>
               <SignalLowColor>#FF0035</SignalLowColor>
@@ -58,10 +59,11 @@
           <Children>
             
             <Overview>
+              <Size>200,40</Size>
               <ObjectName>PositiveBox</ObjectName>
               <TooltipId>waveform_overview</TooltipId>
-              <Group>[PreviewDeck1]</Group>
-              <BgColor>#8D98A3</BgColor>
+              <Group>[Channel1]</Group>
+              <!--BgColor>#8D98A3</BgColor-->
               <SignalHighColor>#FFE300</SignalHighColor>
               <SignalMidColor>#0099FF</SignalMidColor>
               <SignalLowColor>#FF0035</SignalLowColor>
